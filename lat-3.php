@@ -1,4 +1,5 @@
 <?php
+// constant di PHP
 
 $angka = 100;
 $angka = $angka*2;

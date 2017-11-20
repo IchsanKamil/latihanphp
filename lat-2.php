@@ -1,6 +1,6 @@
 <?php
-
 // variable di PHP
+
 $namavariable = 10;
 
 $angka = 100; // integer
