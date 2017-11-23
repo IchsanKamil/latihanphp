@@ -2,11 +2,27 @@
 
 // Looping (pengulangan)
 
-$array = array('satu', 'dua', 'tiga', 1, 2, 3, 0.3, 10.4567, "baru", "lagi");
+$array = array(
+	0 => 'satu',
+	1 => 'dua',
+	2 => 'tiga'
+);
+
+$array = array('satu','dua', 'tiga', 1, 2, 3, 0.3, 10.4567, "baru", "lagi");
+
 $array_index = array(
 	'nama' => 'wisnu hafid',
 	'alamat' => 'margahayu',
 );
+
+// penulisan lain array
+$array_index2 = [
+	'nama' => 'wisnu hafid',
+	'alamat' => 'margahayu',
+];
+
+extract($array_index); // mengubah index array jadi variable
+echo $alamat;
 
 echo '<pre>';
 var_dump($array);
@@ -21,10 +37,12 @@ $baru = array_reverse($array); // membalikan nilai array
 print_r($baru);
 
 echo '</pre>';
+
 echo $array[0];
-
-
 echo '<br>';
+echo $array_index['nama'];
+
+echo '<hr>';
 
 $jumlah = count($array); // untuk hitung jumlah array
 
