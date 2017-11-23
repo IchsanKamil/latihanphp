@@ -3,17 +3,26 @@
 // Looping (pengulangan)
 
 $array = array('satu', 'dua', 'tiga', 1, 2, 3, 0.3, 10.4567, "baru", "lagi");
-echo '<pre>';
-var_dump($array);
-print_r($array);
-echo '</pre>';
-echo $array[0];
-
 $array_index = array(
 	'nama' => 'wisnu hafid',
 	'alamat' => 'margahayu',
 );
+
+echo '<pre>';
+var_dump($array);
+
+print_r($array);
 print_r($array_index);
+
+sort($array, SORT_NUMERIC ); // http://php.net/manual/en/function.sort.php
+asort($array); // di urutkan, tapi indexnya tetap (maintain index)
+
+$baru = array_reverse($array); // membalikan nilai array
+print_r($baru);
+
+echo '</pre>';
+echo $array[0];
+
 
 echo '<br>';
 
